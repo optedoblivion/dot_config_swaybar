@@ -30,5 +30,5 @@ function run() {
         COLOR="$COLOR_CRITICAL"
     fi
 
-    echo "${ICO}${CPU_SPEED}${PERF_ICO}${TEMP_ICO}${TMP}°C${RAM_ICO}${PERCENT}%"
+    echo "${ICO}][${CPU_SPEED}${PERF_ICO}${TEMP_ICO}${TMP}°C${RAM_ICO}${PERCENT}%"
 }
