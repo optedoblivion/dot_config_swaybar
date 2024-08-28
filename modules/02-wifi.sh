@@ -19,5 +19,7 @@ function run() {
     fi
     # TX
     # RX
-    echo "${ICO}${PERCENT}%"
+    SIGNAL="$(nmcli device wifi | grep "*" | awk '{ print $9 }')"
+    SSID="$(nmcli device wifi | grep "*" | awk '{ print $3 }')"
+    echo "${ICO}][${SSID} ${SIGNAL} (${PERCENT}%)"
 }
